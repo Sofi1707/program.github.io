@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icon2.css">
+</head>
+<body>
+    <div id="conteiner">
+        <input type="button" value="RELOAD" id="reload">
+        <div id="computer">
+        </div>
+        <div class="miqichVerev"></div>
+        <div class="nerqev"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            let arr = ["url('https://i.pinimg.com/originals/b1/94/0e/b1940eb27d12eadbcdaa86dca0f1037d.jpg')", "url('https://wallpaperset.com/w/full/0/0/c/436185.jpg')", "url('https://eskipaper.com/images/beautiful-wallpaper-40.jpg')", "url('https://images.freecreatives.com/wp-content/uploads/2015/06/beautiful-wallpapers-for-desktop-forestwonders.jpg')", "url('https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-thumb.jpg')", "url('https://wallpaperaccess.com/full/360424.jpg')", "url('https://www.wallpapertip.com/wmimgs/54-546181_nature-wallpaper-desktop-background-full-screen-full-screen.jpg')", "url('https://wallpaperim.net/_data/i/upload/2014/09/26/20140926560779-52c06f1e-la.jpg')", "url('https://webneel.com/wallpaper/sites/default/files/images/08-2018/3-nature-wallpaper-mountain.jpg')", "url('https://www.pixelstalk.net/wp-content/uploads/2016/03/Beautiful-nature-wallpaper-of-beach.jpg')", "url('https://www.marshallsindia.com/images/younique/nature/nature-cover-slider-28.jpg')", "url('https://cdn.wallpapersafari.com/78/4/oW2AN8.jpg')", "url('https://i.pinimg.com/originals/40/b4/67/40b46716fde57ad536e3b03ecd4b22c8.png')", "url('https://www.desktopbackground.org/download/o/2011/01/12/141072_beautiful-waterfalls-hd-wallpaper-background-free-for-desktop_1920x1080_h.jpg')", "url('https://cutewallpaper.org/21/most-beautiful-nature-wallpapers-backgrounds/most-beautiful-nature-wallpaper-in-the-world-darjeelingteas.jpg')", "url('https://cutewallpaper.org/21/beautiful-background-wallpaper/Beautiful-Nature-Background-Wallpaper-Cute-Wallpapers.jpg')", "url('https://wallpaperaccess.com/full/255965.jpg')", "url('https://image.dhgate.com/0x0s/f2-albu-g9-M00-99-C0-rBVaVV7RywCAaaSKAAIgt6Nac3E154.jpg/3d-mural-beautiful-scenery-wallpapers-green.jpg')", "url('https://wallup.net/wp-content/uploads/2019/05/10/612532-landscape-nature-beautiful-forest-area-wild-sky-landscapes-748x468.jpg')", "url('https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"]
+
+        let computer = document.getElementById('computer')
+        computer.style.backgroundImage = arr[Math.floor(arr.length * Math.random())]
+        computer.style.backgroundSize = 'cover'
+
+        let reload = document.getElementById('reload')
+        reload.onclick = function () {
+            window.location.reload();
+        }
+        }
+    </script>
+</body>
+</html>
