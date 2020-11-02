@@ -39,3 +39,9 @@
     height: 40px;
     background-color: black;
 }
+
+input {
+    width: 80px;
+    height: 50px;
+    background-color: blue;
+}
